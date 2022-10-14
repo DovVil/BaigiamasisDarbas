@@ -24,6 +24,9 @@ public class Locators {
             public static By enterPassword = By.xpath("//input[@name='password']");
             public static By clickPrisijungti = By.xpath("//input[@value='Prisijungti']");
             public static By linkElementManoDuomenys = By.xpath("//span[@class='static-title']");
+            public static By moveCursorToSeeAtsijungtiButton =
+                    By.xpath("//*[@class='right login-menu last-menu-item']");
+            public static By clickAtsijungtiButton = By.xpath("//*[contains(text(),'Atsijungti')]");
         }
 
     }

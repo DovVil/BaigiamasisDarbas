@@ -4,7 +4,7 @@ import dovydas.finalWork.pages.Common;
 import dovydas.finalWork.pages.Locators;
 import org.openqa.selenium.NoSuchElementException;
 
-public class LoginPage {
+public class LogInOutPage {
     public static void open(String url) {
         Common.openUrl(url);
     }
@@ -33,5 +33,23 @@ public class LoginPage {
         } catch (NoSuchElementException e) {
             return false;
         }
+    }
+
+
+    public static boolean checkIfPrisijunkiteElementIsAvailable() {
+        try {
+            Common.getElement(Locators.Skytech.Login.clickOnPrisijunkite);
+            return true;
+        } catch (NoSuchElementException e) {
+            return false;
+        }
+    }
+
+    public static void moveCursorToSeeAtsijungtiButton() {
+        Common.moveCursorToPosition(Locators.Skytech.Login.moveCursorToSeeAtsijungtiButton);
+    }
+
+    public static void clickAtsijungti() {
+        Common.clickElement(Locators.Skytech.Login.clickAtsijungtiButton);
     }
 }
