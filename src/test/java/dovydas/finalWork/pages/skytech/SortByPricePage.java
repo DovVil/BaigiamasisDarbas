@@ -1,9 +1,21 @@
 package dovydas.finalWork.pages.skytech;
 
 import dovydas.finalWork.pages.Common;
+import dovydas.finalWork.pages.Locators;
 
 public class SortByPricePage {
     public static void open(String url) {
         Common.openUrl(url);
+    }
+
+
+    public static void moveCursorToOpenSortingOptions() {
+        Common.moveCursorToPosition(Locators.Skytech.Sort.mouseoverSortButton);
+    }
+
+
+    public static void click100to1SortButton() {
+        Common.waitForButtonToBeVisible(Locators.Skytech.Sort.clickSortByPriceHighToLowButton);
+        Common.clickElement(Locators.Skytech.Sort.clickSortByPriceHighToLowButton);
     }
 }

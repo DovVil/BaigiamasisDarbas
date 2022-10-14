@@ -28,6 +28,12 @@ public class Locators {
                     By.xpath("//*[@class='right login-menu last-menu-item']");
             public static By clickAtsijungtiButton = By.xpath("//*[contains(text(),'Atsijungti')]");
         }
+        public static class Sort{
+            public static By mouseoverSortButton = By.xpath("//*[@id='listing-filter-panel-rusiavimas']");
+
+            public static By clickSortByPriceHighToLowButton =
+                    By.xpath("//a[contains(text(),'Kaina 100-1')]");
+        }
 
     }
 }
