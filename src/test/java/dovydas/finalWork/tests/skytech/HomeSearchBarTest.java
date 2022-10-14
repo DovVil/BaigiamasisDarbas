@@ -19,5 +19,6 @@ public class HomeSearchBarTest extends TestBase {
         String actualGpuName = "";
 
         HomeSearchBarPage.enterGpuName(expectedGpuName);
+        HomeSearchBarPage.clickSearchButton();
     }
 }
