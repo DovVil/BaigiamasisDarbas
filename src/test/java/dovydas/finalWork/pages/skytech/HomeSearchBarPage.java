@@ -2,6 +2,7 @@ package dovydas.finalWork.pages.skytech;
 
 import dovydas.finalWork.pages.Common;
 import dovydas.finalWork.pages.Locators;
+import org.openqa.selenium.NoSuchElementException;
 
 public class HomeSearchBarPage {
 
@@ -20,4 +21,12 @@ public class HomeSearchBarPage {
         Common.clickElement(Locators.Skytech.SearchBar.clickButtonToSearch);
     }
 
+    public static boolean checkIfNameIsAvailable() {
+        try{
+            Common.getElement(Locators.Skytech.SearchBar.linkRtx4090);
+            return true;
+        }catch(NoSuchElementException e){
+            return false;
+        }
+    }
 }
