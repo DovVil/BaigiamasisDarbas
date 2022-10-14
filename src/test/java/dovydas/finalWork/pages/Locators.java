@@ -23,6 +23,7 @@ public class Locators {
             public static By enterEmailAddress = By.xpath("//input[@name='email_address']");
             public static By enterPassword = By.xpath("//input[@name='password']");
             public static By clickPrisijungti = By.xpath("//input[@value='Prisijungti']");
+            public static By linkElementManoDuomenys = By.xpath("//span[@class='static-title']");
         }
 
     }
