@@ -15,7 +15,7 @@ public class LogInOutTest extends TestBase {
     }
 
     @Test
-    private void testLogin() {
+    private void testLoginLogout() {
         String loginEmail = "bukmanodraugas@gmail.com";
         String loginPassword = "Dovydas1";
         boolean nameIsPresent;
