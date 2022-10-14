@@ -18,4 +18,15 @@ public class SortByPricePage {
         Common.waitForButtonToBeVisible(Locators.Skytech.Sort.clickSortByPriceHighToLowButton);
         Common.clickElement(Locators.Skytech.Sort.clickSortByPriceHighToLowButton);
     }
+
+    public static String getPriceOfTheFirstListing() {
+        Common.waitForButtonToBeVisible(Locators.Skytech.Sort.readFirstListingPrice);
+        return Common.getElementText(Locators.Skytech.Sort.readFirstListingPrice);
+    }
+
+    public static String getPriceOfTheSecondListing() {
+        Common.waitForButtonToBeVisible(Locators.Skytech.Sort.readSecondListingPrice);
+        return Common.getElementText(Locators.Skytech.Sort.readSecondListingPrice);
+    }
+
 }

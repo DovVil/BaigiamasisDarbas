@@ -33,6 +33,10 @@ public class Locators {
 
             public static By clickSortByPriceHighToLowButton =
                     By.xpath("//a[contains(text(),'Kaina 100-1')]");
+            public static By readFirstListingPrice =
+                    By.xpath("(//table[@class='productListing']//*[contains(text(),'€')])[1]");
+            public static By readSecondListingPrice =
+                    By.xpath("(//table[@class='productListing']//*[contains(text(),'€')])[2]");
         }
 
     }
