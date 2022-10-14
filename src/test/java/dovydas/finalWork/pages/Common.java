@@ -133,4 +133,13 @@ public class Common {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(8));
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
+
+
+    public static void moveCursorToPosition(By locator) {
+        WebElement element = getElement(locator);
+        Actions action = new Actions(Driver.getDriver());
+        action.moveToElement(element);
+        action.perform();
+    }
+
 }
