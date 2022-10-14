@@ -20,4 +20,8 @@ public class LoginPage {
     public static void enterPasswordInfo(String loginPassword) {
         Common.sendKeysToElement(loginPassword, Locators.Skytech.Login.enterPassword);
     }
+
+    public static void clickOnPrisijungti() {
+        Common.clickElement(Locators.Skytech.Login.clickPrisijungti);
+    }
 }
