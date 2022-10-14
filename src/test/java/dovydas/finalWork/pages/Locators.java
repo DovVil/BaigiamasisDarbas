@@ -18,6 +18,10 @@ public class Locators {
                     By.xpath("//*[@id='navbar']//*[contains(text(),'Vaizdo plokštės')]");
             public static By readElementText = By.xpath("//h1[contains(text(),'Vaizdo plokštės')]");
         }
+        public static class Login{
+            public static By clickOnPrisijunkite = By.xpath("//*[@class='link-login']");
+            public static By enterEmailAddress = By.xpath("//input[@name='email_address']");
+        }
 
     }
 }
