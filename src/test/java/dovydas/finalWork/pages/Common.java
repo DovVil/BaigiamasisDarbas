@@ -141,5 +141,9 @@ public class Common {
         action.moveToElement(element);
         action.perform();
     }
+    public static void waitForButtonToBeVisible(By locator) {
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
 
 }

@@ -12,5 +12,9 @@ public class HomePage {
     public static void moveCursorToSeeDetailedMenu() {
         Common.moveCursorToPosition(Locators.Skytech.Home.moveCursorOverMainMenuButton);
     }
+    public static void clickDesiredButton() {
+        Common.waitForButtonToBeVisible(Locators.Skytech.Home.clickOnGpuButton);
+        Common.clickElement(Locators.Skytech.Home.clickOnGpuButton);
+    }
 
 }

@@ -14,7 +14,8 @@ public class Locators {
         public static class Home {
             public static By moveCursorOverMainMenuButton =
                     By.xpath("(//*[@class='main-nav'])[1]");
-
+            public static By clickOnGpuButton =
+                    By.xpath("//*[@id='navbar']//*[contains(text(),'Vaizdo plokštės')]");
         }
 
     }

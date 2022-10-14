@@ -20,5 +20,6 @@ public class HomeTest extends TestBase {
         String actualMessage;
 
         HomePage.moveCursorToSeeDetailedMenu();
+        HomePage.clickDesiredButton();
     }
 }
