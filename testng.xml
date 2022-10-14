@@ -6,6 +6,7 @@
             <class name="dovydas.finalWork.tests.skytech.HomeSearchBarTest"/>
             <class name="dovydas.finalWork.tests.skytech.HomeTest"/>
             <class name="dovydas.finalWork.tests.skytech.LogInOutTest"/>
+            <class name="dovydas.finalWork.tests.skytech.SortByPriceTest"/>
         </classes>
     </test>
 </suite>
