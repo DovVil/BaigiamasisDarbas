@@ -5,7 +5,7 @@
         <classes>
             <class name="dovydas.finalWork.tests.skytech.HomeSearchBarTest"/>
             <class name="dovydas.finalWork.tests.skytech.HomeTest"/>
-            <class name="dovydas.finalWork.tests.skytech.LoginTest"/>
+            <class name="dovydas.finalWork.tests.skytech.LogInOutTest"/>
         </classes>
     </test>
 </suite>
