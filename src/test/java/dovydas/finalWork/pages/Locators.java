@@ -16,6 +16,7 @@ public class Locators {
                     By.xpath("(//*[@class='main-nav'])[1]");
             public static By clickOnGpuButton =
                     By.xpath("//*[@id='navbar']//*[contains(text(),'Vaizdo plokštės')]");
+            public static By readElementText = By.xpath("//h1[contains(text(),'Vaizdo plokštės')]");
         }
 
     }

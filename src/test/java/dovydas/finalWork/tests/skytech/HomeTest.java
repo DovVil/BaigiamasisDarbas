@@ -21,5 +21,8 @@ public class HomeTest extends TestBase {
 
         HomePage.moveCursorToSeeDetailedMenu();
         HomePage.clickDesiredButton();
+        actualMessage = HomePage.readMessage();
+
+        Assert.assertTrue(actualMessage.contains(expectedMessage));
     }
 }

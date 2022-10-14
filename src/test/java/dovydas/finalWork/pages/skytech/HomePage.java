@@ -16,5 +16,8 @@ public class HomePage {
         Common.waitForButtonToBeVisible(Locators.Skytech.Home.clickOnGpuButton);
         Common.clickElement(Locators.Skytech.Home.clickOnGpuButton);
     }
+    public static String readMessage() {
+        return Common.getElementText(Locators.Skytech.Home.readElementText);
+    }
 
 }
