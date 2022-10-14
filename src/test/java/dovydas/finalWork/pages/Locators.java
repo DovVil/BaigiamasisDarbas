@@ -21,6 +21,7 @@ public class Locators {
         public static class Login{
             public static By clickOnPrisijunkite = By.xpath("//*[@class='link-login']");
             public static By enterEmailAddress = By.xpath("//input[@name='email_address']");
+            public static By enterPassword = By.xpath("//input[@name='password']");
         }
 
     }

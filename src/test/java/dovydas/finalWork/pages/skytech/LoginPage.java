@@ -16,4 +16,8 @@ public class LoginPage {
     public static void clickPrisijunkite() {
         Common.clickElement(Locators.Skytech.Login.clickOnPrisijunkite);
     }
+
+    public static void enterPasswordInfo(String loginPassword) {
+        Common.sendKeysToElement(loginPassword, Locators.Skytech.Login.enterPassword);
+    }
 }

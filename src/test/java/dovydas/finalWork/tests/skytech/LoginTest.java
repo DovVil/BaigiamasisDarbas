@@ -1,5 +1,6 @@
 package dovydas.finalWork.tests.skytech;
 
+import dovydas.finalWork.pages.Common;
 import dovydas.finalWork.pages.skytech.LoginPage;
 import dovydas.finalWork.tests.TestBase;
 import org.testng.annotations.BeforeMethod;
@@ -19,5 +20,6 @@ public class LoginTest extends TestBase {
 
         LoginPage.clickPrisijunkite();
         LoginPage.enterEmailInfo(loginEmail);
+        LoginPage.enterPasswordInfo(loginPassword);
     }
 }
