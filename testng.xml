@@ -3,6 +3,7 @@
 <suite name="Testing skynet.lt website" parallel="methods" thread-count="4">
     <test name="Test">
         <classes>
+            <class name="dovydas.finalWork.tests.skytech.ShoppingCartTest"/>
             <class name="dovydas.finalWork.tests.skytech.HomeSearchBarTest"/>
             <class name="dovydas.finalWork.tests.skytech.HomeTest"/>
             <class name="dovydas.finalWork.tests.skytech.LogInOutTest"/>
