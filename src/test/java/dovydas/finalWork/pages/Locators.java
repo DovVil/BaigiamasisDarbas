@@ -38,6 +38,18 @@ public class Locators {
             public static By readSecondListingPrice =
                     By.xpath("(//table[@class='productListing']//*[contains(text(),'€')])[2]");
         }
+        public static class Cart{
+            public static By checkAvailability = By.xpath("//*[@class='kiekis']//span[@class='val']");
+            public static By clickAddToCartButton = By.xpath("//div[@class='krepselis-button']");
+            public static By clickOnToCheckInsideCart = By.xpath("//span[@class='text']");
+            public static By checkIfCpuIsInCart = By.xpath(
+                    "//table[@class='shopping-cart-main print-search-result ']//*[contains(text(),'7950X')]");
+            public static By clickToRemoveCpuFromCart =
+                    By.xpath("//*[@class='shopping-cart-main-wrap']//*[@class='remove-icon']");
+            public static By checkIfShoppingCartIsEmpty =
+                    By.xpath("//table[@class='shopping-cart-main']//*[contains(text(),'tuščias')]")
+;
+        }
 
     }
 }
