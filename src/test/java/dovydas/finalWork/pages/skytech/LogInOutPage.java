@@ -9,7 +9,6 @@ public class LogInOutPage {
         Common.openUrl(url);
     }
 
-
     public static void enterEmailInfo(String loginEmail) {
         Common.sendKeysToElement(loginEmail, Locators.Skytech.Login.enterEmailAddress);
     }
@@ -34,7 +33,6 @@ public class LogInOutPage {
             return false;
         }
     }
-
 
     public static boolean checkIfPrisijunkiteElementIsAvailable() {
         try {

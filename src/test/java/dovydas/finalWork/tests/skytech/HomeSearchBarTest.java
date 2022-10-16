@@ -14,8 +14,9 @@ public class HomeSearchBarTest extends TestBase {
         super.setUp();
         HomeSearchBarPage.open("https://www.skytech.lt/");
     }
+
     @Test
-    private void testSearchOfGpuRtx4090(){
+    private void testSearchOfGpuRtx4090() {
         String expectedGpuName = "RTX 4090";
         boolean nameIsAvailable;
 

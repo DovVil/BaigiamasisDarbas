@@ -14,8 +14,9 @@ public class HomeTest extends TestBase {
         super.setUp();
         HomePage.open("https://www.skytech.lt/");
     }
+
     @Test
-    private void testMainMenuNavigation(){
+    private void testMainMenuNavigation() {
         String expectedMessage = "Vaizdo plokštės";
         String actualMessage;
 

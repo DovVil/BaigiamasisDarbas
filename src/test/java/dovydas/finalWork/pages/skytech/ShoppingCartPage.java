@@ -30,23 +30,24 @@ public class ShoppingCartPage {
     }
 
     public static boolean readIfCpuIsAddedToCart() {
-        try{
+        try {
             Common.getElement(Locators.Skytech.Cart.checkIfCpuIsInCart);
             return true;
-        }catch(NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             return false;
         }
     }
 
     public static void clickToRemoveProductFromCart() {
+        Common.waitForButtonToBeVisible(Locators.Skytech.Cart.clickToRemoveCpuFromCart);
         Common.clickElement(Locators.Skytech.Cart.clickToRemoveCpuFromCart);
     }
 
     public static boolean checkIfCartIsEmpty() {
-        try{
+        try {
             Common.getElement(Locators.Skytech.Cart.checkIfShoppingCartIsEmpty);
             return true;
-        }catch(NoSuchElementException e){
+        } catch (NoSuchElementException e) {
             return false;
         }
     }

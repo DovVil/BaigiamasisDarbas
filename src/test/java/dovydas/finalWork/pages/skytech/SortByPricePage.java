@@ -8,11 +8,9 @@ public class SortByPricePage {
         Common.openUrl(url);
     }
 
-
     public static void moveCursorToOpenSortingOptions() {
         Common.moveCursorToPosition(Locators.Skytech.Sort.mouseoverSortButton);
     }
-
 
     public static void click100to1SortButton() {
         Common.waitForButtonToBeVisible(Locators.Skytech.Sort.clickSortByPriceHighToLowButton);

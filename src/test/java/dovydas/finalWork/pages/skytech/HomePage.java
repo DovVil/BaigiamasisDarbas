@@ -8,14 +8,15 @@ public class HomePage {
         Common.openUrl(url);
     }
 
-
     public static void moveCursorToSeeDetailedMenu() {
         Common.moveCursorToPosition(Locators.Skytech.Home.moveCursorOverMainMenuButton);
     }
+
     public static void clickDesiredButton() {
         Common.waitForButtonToBeVisible(Locators.Skytech.Home.clickOnGpuButton);
         Common.clickElement(Locators.Skytech.Home.clickOnGpuButton);
     }
+
     public static String readMessage() {
         return Common.getElementText(Locators.Skytech.Home.readElementText);
     }

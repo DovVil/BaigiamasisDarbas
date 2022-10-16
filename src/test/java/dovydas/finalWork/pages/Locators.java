@@ -18,7 +18,8 @@ public class Locators {
                     By.xpath("//*[@id='navbar']//*[contains(text(),'Vaizdo plokštės')]");
             public static By readElementText = By.xpath("//h1[contains(text(),'Vaizdo plokštės')]");
         }
-        public static class Login{
+
+        public static class Login {
             public static By clickOnPrisijunkite = By.xpath("//*[@class='link-login']");
             public static By enterEmailAddress = By.xpath("//input[@name='email_address']");
             public static By enterPassword = By.xpath("//input[@name='password']");
@@ -28,7 +29,8 @@ public class Locators {
                     By.xpath("//*[@class='right login-menu last-menu-item']");
             public static By clickAtsijungtiButton = By.xpath("//*[contains(text(),'Atsijungti')]");
         }
-        public static class Sort{
+
+        public static class Sort {
             public static By mouseoverSortButton = By.xpath("//*[@id='listing-filter-panel-rusiavimas']");
 
             public static By clickSortByPriceHighToLowButton =
@@ -38,7 +40,8 @@ public class Locators {
             public static By readSecondListingPrice =
                     By.xpath("(//table[@class='productListing']//*[contains(text(),'€')])[2]");
         }
-        public static class Cart{
+
+        public static class Cart {
             public static By checkAvailability = By.xpath("//*[@class='kiekis']//span[@class='val']");
             public static By clickAddToCartButton = By.xpath("//div[@class='krepselis-button']");
             public static By clickOnToCheckInsideCart = By.xpath("//span[@class='text']");
@@ -47,8 +50,7 @@ public class Locators {
             public static By clickToRemoveCpuFromCart =
                     By.xpath("//*[@class='shopping-cart-main-wrap']//*[@class='remove-icon']");
             public static By checkIfShoppingCartIsEmpty =
-                    By.xpath("//table[@class='shopping-cart-main']//*[contains(text(),'tuščias')]")
-;
+                    By.xpath("//table[@class='shopping-cart-main']//*[contains(text(),'tuščias')]");
         }
 
     }
